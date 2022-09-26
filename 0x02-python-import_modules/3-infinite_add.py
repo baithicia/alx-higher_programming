@@ -2,9 +2,11 @@
 if __name__ == '__main__':
     import sys
     sum = 0
-    print("number of arguments:", len(sys.argv))
-    for i in range(len(sys.argv) - 1):
+    arguments_number = len(sys.argv)
+    arguments = str(sys.argv)
+    for i in range(1, len(sys.argv)):
         sum += int(sys.argv[i + 1])
-    print("{:d}".format(sum))
+    print (int("{:d}".format(sum)))
+
 
 
