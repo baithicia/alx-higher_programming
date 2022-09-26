@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 if __name__ == __name__:
     from sys import argv
     argc = len(argv)
