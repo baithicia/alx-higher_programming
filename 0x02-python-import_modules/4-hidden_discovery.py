@@ -9,6 +9,7 @@ if __name__ == '__main__':
     names.sort()
     print("The sorted words are:")
     for name in names:
-        print(name)
+        print(name, end = '')
         
+
 
