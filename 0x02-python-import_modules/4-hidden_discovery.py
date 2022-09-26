@@ -4,12 +4,11 @@ if __name__ == '__main__':
     for i in dir(hidden_4):
         if "__" not in i:
             print(i)
-    my_str = input("i")
-    names = [name.lower() for name in my_str.split()]
-    names.sort()
-    print("The sorted words are:")
-    for name in names:
-        print(name, end = '')
-        
+            for i in dir(hidden_4):
+                name = [i.lower() for i in dir.split()]
+                name.sort()
+                for name in dir:
+                    print(name, end = '')
 
+   
 
