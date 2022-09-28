@@ -49,5 +49,3 @@ int is_palindrome(listint_t **head)
 	free(buf);
 	return (1);
 }
-Footer
-© 2022 GitHub, Inc
