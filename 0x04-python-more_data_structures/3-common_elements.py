@@ -1,7 +1,4 @@
 #!/usr/bin/python3
 def common_elements(set_1, set_2):
-    if len(set_1.intersection(set_2)) > 0:
-        return(set_1.intersection(set_2))
-    else:
-        return("no common_elements")
-        
+    result =(i for i in set_1 if i in set_2)
+    return result
