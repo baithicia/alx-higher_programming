@@ -5,4 +5,5 @@ def uniq_add(my_list=[]):
     for num in uniquelist:
         sum += num
     return sum
+    
 
