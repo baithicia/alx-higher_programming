@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-say_my_name = __import__('3-say_my_name').say_my_name
 
-say_my_name("John", "Smith")
-say_my_name("Walter", "White")
-say_my_name("Bob")
-try:
-    say_my_name(12, "White")
-except Exception as e:
-    print(e)
+
+"""Say my name"""
+
+
+def say_my_name(first_name, last_name=""):
+    """
+    Function thats prints my name
+    """
+    if isinstance(first_name, str) is False:
+        raise TypeError('first_name must be a string')
+    if isinstance(last_name, str) is False:
+        raise TypeError('last_name must be a string')
+
+    print('My name is {:s} {:s}'.format(first_name, last_name))
