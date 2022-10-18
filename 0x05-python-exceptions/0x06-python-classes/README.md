@@ -1,2 +1,1 @@
-# Python classes
-Object Oriented Programming
+0x06 Python - Classes and Objects
