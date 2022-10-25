@@ -1,23 +1,21 @@
 #!/usr/bin/python3
-'''
- Import statement
- '''
+"""Square #2"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    '''
-    Rectangle class
-    '''
+    """representation of a square"""
 
     def __init__(self, size):
-        """ Doctring """
-        super().integer_validator("size", size)
-        self.__size = size
+        """instantiation of the square"""
+        self.integer_validator("size", size)
         super().__init__(size, size)
+        self.__size = size
 
     def __str__(self):
-        '''
-        String rep
-        '''
-        return ("[Square] {}/{}".format(self.__size, self.__size))
+        """custom str method for print the rectangle"""
+        return "[Square] " + str(self.__size) + "/" + str(self.__size)
+
+    def area(self):
+        """computes the area of the retangle"""
+        return self.__size ** 2
