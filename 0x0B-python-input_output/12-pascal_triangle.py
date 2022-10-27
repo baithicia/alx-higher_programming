@@ -1,15 +1,30 @@
 #!/usr/bin/python3
-"""Pascal's Triangle"""
+"""
+Class Module
+"""
 
 
-def pascal_triangle(n):
-    """returns a list of lists of integers
-    representing the Pascal’s triangle of n"""
-    triangle = []
-    if n <= 0:
-        return []
-    for i in range(n):
-        a = 11 ** i
-        row = [int(digit) for digit in str(a)]
-        triangle += [row]
-    return triangle
+class Student:
+    """
+    Student class
+    """
+
+    def __init__(self, first_name, last_name, age):
+        """initialize method
+        """
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
+
+    def to_json(self, attrs=None):
+        """retrieves a dictionary representation of student instance
+        args:
+            attrs: attributes
+        return:
+            dictionary
+        """
+        if not attrs:
+            return self.__dict__
+
+        return ({key: value for key, value in self.__dict__.items()
+                 if key in attrs})
