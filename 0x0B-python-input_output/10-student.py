@@ -11,7 +11,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """retrieves a dictionary representation of a Student instance
+        """retrieves a dictionary representationn of a Student instance
         with filter"""
         if (type(attrs) == list and
                 all(type(element) == str for element in attrs)):
