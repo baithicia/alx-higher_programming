@@ -5,7 +5,7 @@
 class Student:
     """representation of a student"""
     def __init__(self, first_name, last_name, age):
-        """instantiation of the student"""
+        """instantiation of the studennt"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
